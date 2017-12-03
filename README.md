@@ -19,10 +19,4 @@ You can use the modified version of PartialZip by copying the SharpZipLib and Pa
 
 	using PartialZip;
 	
-	namespace PZip {
-		class Program {
-			public static void Main(string[] args) {
-				PartialZip.DownloadFileFromZipURL(URLToZip, FilePathInZip, SaveLocation); // Returns True on success and False on error
-			}
-		}
-	}
+	PartialZip.DownloadFileFromZipURL(<URLToZip>, <FilePathInZip>, <SaveLocation>); // Returns True on success and False on error
