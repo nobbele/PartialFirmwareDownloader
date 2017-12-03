@@ -6,8 +6,8 @@ using ICSharpCode.SharpZipLib.Zip;
 using RemoteZip;
 
 namespace PartialZipLib {
-    public static class PartialZip
-    {
+	public static class PartialZip
+	{
 		private static void CopyStream(Stream input, Stream output)
 		{
 			int num = 0;
@@ -26,7 +26,7 @@ namespace PartialZipLib {
 
 		public static bool DownloadFileFromZipURL(string ZipURL, string FilePathInZip, string LocalPath)
 		{
-            if(!isURLValid(ZipURL)) return false;
+            		if(!isURLValid(ZipURL)) return false;
 
 			bool ret = false;
 			RemoteZipFile file = new RemoteZipFile();
