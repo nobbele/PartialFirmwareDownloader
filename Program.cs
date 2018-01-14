@@ -8,8 +8,9 @@ namespace FirmwareDownloader {
         }
 
         public static void Main(string[] args) {
+            if (args[3].Length == 0) args[3] = System.AppDomain.CurrentDomain.BaseDirectory;
             // If the amount of arguments is not exactly 4
-            if(args.Length != 4) {
+            if (args.Length != 4) {
                 Console.WriteLine("Error! need exactly 4 arguments\nUsage: {0} iPhone4,1 13G36 Firmware/dfu/iBSS.n94.RELEASE.dfu iBSS.n94.RELEASE.dfu", System.Diagnostics.Process.GetCurrentProcess().ProcessName);
             } else {
                 /*
